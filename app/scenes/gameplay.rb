@@ -1,20 +1,18 @@
 module Scenes
-  class Welcome
-    def welcome_tick(args)
+  class Gameplay
+    def gameplay_tick(args)
 
       ## UI ##
+
       args.outputs.labels  << { x: 640,
                                 y: 600,
-                                text: 'Dice war',
+                                text: 'Gameplay',
                                 size_px: 60,
                                 anchor_x: 0.5,
                                 anchor_y: 0.5 }
 
-      # click icon
-
       ## UX ##
 
-      args.state.scene = "menu" if args.inputs.mouse.click
     end
 
     private
